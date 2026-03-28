@@ -1,0 +1,178 @@
+/* ============================================
+   Horizons Theme for Starlight
+   Based on horizons.hackclub.com
+   ============================================ */
+
+/* Light theme — warm cream palette */
+:root,
+[data-theme='light'] {
+  --sl-font: 'Bricolage Grotesque', system-ui, sans-serif;
+
+  /* Hack Club red accent */
+  --sl-color-accent-low: #f5dde1;
+  --sl-color-accent: #000000;
+  --sl-color-accent-high: #8a0d1e;
+
+  /* Warm grayscale */
+  --sl-color-white: #1a1209;
+  --sl-color-gray-1: #2d2013;
+  --sl-color-gray-2: #4a3520;
+  --sl-color-gray-3: #7a5f42;
+  --sl-color-gray-4: #b09070;
+  --sl-color-gray-5: #cfc0a8;
+  --sl-color-gray-6: #e2d8c8;
+  --sl-color-gray-7: #ede4d6;
+  /* black = page background in Starlight's light mode */
+  --sl-color-black: #f3e8d8;
+}
+
+/* Dark theme — inverted warm palette */
+[data-theme='dark'] {
+  --sl-font: 'Bricolage Grotesque', system-ui, sans-serif;
+
+  --sl-color-accent-low: #4a1020;
+  --sl-color-accent: #000000;
+  --sl-color-accent-high: #f7a0ae;
+
+  --sl-color-white: #ede4d6;
+  --sl-color-black: #1a1209;
+  --sl-color-gray-1: #e8dece;
+  --sl-color-gray-2: #d0c4b0;
+  --sl-color-gray-3: #a89070;
+  --sl-color-gray-4: #7a6040;
+  --sl-color-gray-5: #4a3825;
+  --sl-color-gray-6: #2d2013;
+  --sl-color-gray-7: #221810;
+}
+
+/* ============================================
+   Typography — Cook Widetype for headings
+   ============================================ */
+
+.site-title,
+h1, h2, h3,
+.sl-markdown-content h1,
+.sl-markdown-content h2,
+.sl-markdown-content h3 {
+  font-family: 'Cook Widetype', 'Bricolage Grotesque', system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Hero heading */
+.hero h1,
+[data-theme] .hero .tagline ~ * h1 {
+  font-family: 'Cook Widetype', system-ui, sans-serif;
+}
+
+/* Site title in nav */
+.site-title {
+  font-family: 'Cook Widetype', system-ui, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* ============================================
+   Background — Horizons diamond pattern
+   ============================================ */
+
+[data-theme='light'] body,
+:root body {
+  background-image: url('/background.svg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+/* Keep header and sidebar readable over the pattern */
+[data-theme='light'] header.header {
+  background-color: rgba(243, 232, 216, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+[data-theme='dark'] header.header {
+  background-color: rgba(26, 18, 9, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Sidebar: apply blur to .sidebar-pane (the actual fixed element), not nav.sidebar.
+   backdrop-filter on nav.sidebar would make it a containing block, collapsing
+   the position:fixed .sidebar-pane to zero height. */
+[data-theme='light'] .sidebar-pane {
+  background-color: rgba(243, 232, 216, 0.92) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+[data-theme='dark'] .sidebar-pane {
+  background-color: rgba(26, 18, 9, 0.92) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Content area — slight transparency to let background show */
+[data-theme='light'] .main-frame,
+[data-theme='light'] .content-panel {
+  background-color: rgba(243, 232, 216, 0.00);
+}
+
+/* Right TOC sidebar, main content, and pagination — whitish card backgrounds */
+[data-theme='light'] .right-sidebar-panel,
+[data-theme='light'] starlight-toc {
+  background-color: rgba(255, 252, 248, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+}
+
+[data-theme='light'] .sl-markdown-content,
+[data-theme='light'] .content-panel > .sl-container {
+  background-color: rgba(255, 252, 248, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+[data-theme='light'] .pagination-links {
+  background-color: rgba(255, 252, 248, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+}
+
+/* ============================================
+   Borders — softer warm tones
+   ============================================ */
+
+[data-theme='light'] {
+  --sl-color-hairline: rgba(74, 53, 32, 0.15);
+  --sl-color-hairline-light: rgba(74, 53, 32, 0.08);
+  --sl-color-hairline-shade: rgba(74, 53, 32, 0.25);
+}
+
+/* ============================================
+   Code blocks — warm tinted
+   ============================================ */
+
+[data-theme='light'] .expressive-code .frame {
+  background-color: #ede0cc;
+  border-color: rgba(74, 53, 32, 0.18);
+}
+
+/* ============================================
+   Links & accents
+   ============================================ */
+
+.sl-markdown-content a {
+  color: var(--sl-color-accent);
+  text-decoration-color: rgba(236, 55, 80, 0.35);
+}
+
+.sl-markdown-content a:hover {
+  text-decoration-color: var(--sl-color-accent);
+}

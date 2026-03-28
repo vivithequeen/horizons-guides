@@ -5,7 +5,13 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'Guides',
+			title: 'Horizons Guides',
+			favicon: '/favicon.ico',
+			logo: {
+				src: './public/favicon.png',
+				alt: 'Horizons',
+			},
+			customCss: ['./src/styles/fonts.css', './src/styles/custom.css'],
 			sidebar: [
 				{
 					label: 'Guides',
