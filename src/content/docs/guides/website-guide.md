@@ -233,4 +233,4 @@ If you feel confident, you can move on and start your own project that builds on
 If not - no worries! Feel free to ask for help in the Hack Club Slack.
 
 
-*This guide was originally written by phthallo for [Tribute](https://tribute.athena.hackclub.com/).*
+*This guide was originally written by Phthallo for [Tribute](https://jams.hackclub.com/jam/godot-platformer).*

@@ -32,8 +32,11 @@
 
 [data-theme='dark'] {
   --sl-font: 'Bricolage Grotesque', system-ui, sans-serif;
+  --hz-cream: #1a1209;
+  --hz-frame: #3a2e20;
+
   --sl-color-accent-low: #4a1020;
-  --sl-color-accent: #000000;
+  --sl-color-accent: #f7a0ae;
   --sl-color-accent-high: #f7a0ae;
   --sl-color-white: #ede4d6;
   --sl-color-black: #1a1209;
@@ -44,6 +47,10 @@
   --sl-color-gray-5: #4a3825;
   --sl-color-gray-6: #2d2013;
   --sl-color-gray-7: #221810;
+
+  --sl-color-hairline: transparent;
+  --sl-color-hairline-light: transparent;
+  --sl-color-hairline-shade: transparent;
 }
 
 /* ============================================
@@ -76,6 +83,11 @@ h1, h2, h3,
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
+}
+
+[data-theme='dark'] body {
+  background-image: none;
+  background-color: var(--sl-color-black);
 }
 
 /* ============================================
@@ -120,6 +132,15 @@ h1, h2, h3,
   padding-top: 2rem;
 }
 
+[data-theme='dark'] .content-panel,
+[data-theme='dark'] .main-frame {
+  background-color: transparent;
+}
+
+[data-theme='dark'] .main-frame {
+  padding-top: 2rem;
+}
+
 /* ============================================
    Mobile TOC bar — styled inline bar
    ============================================ */
@@ -132,6 +153,10 @@ mobile-starlight-toc {
   margin-bottom: 1rem;
   display: block;
   width: 100%;
+}
+
+[data-theme='dark'] mobile-starlight-toc {
+  background-color: rgba(26, 18, 9, 0.95);
 }
 
 /* ============================================
@@ -175,6 +200,15 @@ mobile-starlight-toc {
   background-color: transparent;
 }
 
+[data-theme='dark'] .right-sidebar {
+  background-color: rgba(26, 18, 9, 0.95);
+  border-left: 3px solid var(--hz-frame);
+}
+
+[data-theme='dark'] .right-sidebar-panel {
+  background-color: transparent;
+}
+
 /* ============================================
    Pagination links — bordered card
    ============================================ */
@@ -186,14 +220,64 @@ mobile-starlight-toc {
   padding: 1rem 1.25rem;
 }
 
+[data-theme='dark'] .pagination-links a {
+  background-color: #221810;
+  border: 3px solid var(--hz-frame);
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+}
+
 /* ============================================
    Code blocks
    ============================================ */
 
-[data-theme='light'] .expressive-code .frame {
-  background-color: #ede0cc;
+.expressive-code .frame {
   border: 2px solid var(--hz-frame);
   border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+[data-theme='light'] .expressive-code .frame {
+  background-color: #ede0cc;
+}
+
+[data-theme='dark'] .expressive-code .frame {
+  background-color: #1e1610;
+}
+
+/* File tab header */
+.expressive-code .frame .header {
+  border-bottom: 2px solid var(--hz-frame);
+}
+
+[data-theme='light'] .expressive-code .frame .header {
+  background-color: #e0d2be;
+}
+
+[data-theme='dark'] .expressive-code .frame .header {
+  background-color: #291e14;
+}
+
+/* Code area */
+.expressive-code .frame pre {
+  background-color: transparent !important;
+}
+
+/* Inline code */
+:not(pre) > code {
+  border-radius: 0.3rem;
+  padding: 0.15em 0.35em;
+  font-size: 0.9em;
+}
+
+[data-theme='light'] :not(pre) > code {
+  background-color: #e4d6c2;
+  border: 1px solid #c8b89e;
+}
+
+[data-theme='dark'] :not(pre) > code {
+  background-color: #2a1e14;
+  border: 1px solid var(--hz-frame);
 }
 
 /* ============================================
