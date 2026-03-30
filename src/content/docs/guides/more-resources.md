@@ -1,6 +1,6 @@
 ---
 title: More resources
-description: Many more resources to 
+description: Many more resources...
 sidebar:
   order: 999
 ---
@@ -13,11 +13,17 @@ If theres anything cool you would want to see here send @violet a message on sla
 ## Software
 
 ### 3d Rendering
-3d renderers are really cool !!! heres some resources :)
-- https://lodev.org/cgtutor/raycasting.html
-- https://www.youtube.com/watch?v=CHYxjpYep_M
-- https://jtsorlinis.github.io/rendering-tutorial/
-- https://www.youtube.com/watch?is=CIweYi960CGnWlrV&v=rUKsjo1nReE&feature=youtu.be
+3d renderers are really cool !!! heres some resources :) 
+
+*resources compiled by noob and violet*
+- [really cool raycasting guide written by Lode Vandevenne.](https://lodev.org/cgtutor/raycasting.html)
+- [video on rendering techniques](https://www.youtube.com/watch?v=CHYxjpYep_M)
+- [rasterisation guide written by Jason Tsorlinis](https://jtsorlinis.github.io/rendering-tutorial/)
+- [rotation matricies video](https://youtu.be/rUKsjo1nReE?si=wR9-LzDCVYUJ50km)
+
+### Gamdev
+- [itch.io game assets](https://itch.io/game-assets)
+- [open game art](https://opengameart.org/)
 ## Hardware
 
 - https://hwdocs.hackclub.dev/

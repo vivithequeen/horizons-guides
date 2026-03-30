@@ -1,5 +1,5 @@
 ---
-title: Horizons Guides!
+title: Horizons Guides
 description: Browse the available guides.
 ---
 
