@@ -22,6 +22,7 @@ export default defineConfig({
 						{ slug: 'guides/git-guide' },
 						{ slug: 'guides/website-guide' },
 						{ slug: 'guides/godot-guide' },
+						{ slug: 'guides/flask-guide'},
 						{ slug: 'guides/more-resources' },
 					],
 				},
