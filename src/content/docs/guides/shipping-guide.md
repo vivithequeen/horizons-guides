@@ -486,7 +486,7 @@ sidebar:
 <li><span class="bg-step-num">3</span><span>Write a Steps to Reproduce section in the README. A stranger should be able to follow it end-to-end: sourcing parts from the BoM, assembling, flashing the firmware, and verifying it works.</span></li>
 <li><span class="bg-step-num">4</span><span>Include a complete Bill of Materials with quantities, exact part numbers where they matter, and approximate costs.</span></li>
 <li><span class="bg-step-num">5</span><span>Commit progress as frequently as possible. Many small commits are required so reviewers can see the build evolve, not appear in a single dump.</span></li>
-<li><span class="bg-step-num">6</span><span>Record your build sessions with a timelapse tool. <a href="https://lapse.hackclub.com" target="_blank" rel="noopener">lapse.hackclub.com</a> and <a href="https://lookout.hackclub.com" target="_blank" rel="noopener">lookout.hackclub.com</a> are both built for this and link straight into your submission.</span></li>
+<li><span class="bg-step-num">6</span><span>Record your build sessions with a timelapse tool. <a href="https://lapse.hackclub.com" target="_blank" rel="noopener">lapse.hackclub.com</a> is built for this and links straight into your submission.</span></li>
 <li><span class="bg-step-num">7</span><span>Keep a devlog with an entry roughly every hour of work.</span></li>
 <li><span class="bg-step-num">8</span><span>Take photos of the assembled build and of it actually working (LED on, motor spinning, sensor reading on a screen).</span></li>
 <li><span class="bg-step-num">9</span><span>Record a short demo video and link it as Demo URL.</span></li>

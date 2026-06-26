@@ -28,7 +28,6 @@ export default defineConfig({
             { slug: "guides/website-guide" },
             { slug: "guides/godot-guide" },
             { slug: "guides/flask-guide" },
-            { slug: "guides/gamemaker-guide" },
             { slug: "guides/more-resources" },
           ],
         },
