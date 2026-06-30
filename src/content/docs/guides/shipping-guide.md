@@ -468,31 +468,62 @@ sidebar:
 ## <svg class="bg-icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M 14 2C 14 2.74028 13.5978 3.38663 13 3.73244L 13 6L 11 6L 11 3.73244C 10.4022 3.38663 10 2.74028 10 2C 10 0.895432 10.8954 0 12 0C 13.1046 0 14 0.895432 14 2ZM 11 7.00577L 11 7L 13 7L 13 7.00577C 22.1347 7.11594 24 8.8546 24 16.5C 24 24.4167 22 26 12 26C 2 26 0 24.4167 0 16.5C 0 8.8546 1.8653 7.11594 11 7.00577ZM 5.5 17C 6.32843 17 7 16.3284 7 15.5C 7 14.6716 6.32843 14 5.5 14C 4.67157 14 4 14.6716 4 15.5C 4 16.3284 4.67157 17 5.5 17ZM 18.5 17C 19.3284 17 20 16.3284 20 15.5C 20 14.6716 19.3284 14 18.5 14C 17.6716 14 17 14.6716 17 15.5C 17 16.3284 17.6716 17 18.5 17ZM 12.0008 21C 13.9558 21 15.6185 19.7531 15.9905 18.0909C 16.176 17.262 13.597 17 12.0011 17C 10.4053 17 7.80522 17.1678 8.01158 18.0909C 8.38356 19.7531 10.0457 21 12.0008 21Z" transform="translate(4 2)"/></svg> Hardware
 
 <div class="horizons-guide bg-section">
-<p class="bg-intro">A physical build: PCB, electronics, robot, sensor rig, anything you can hold.</p>
+<p class="bg-intro">A physical project: PCB, electronics, robot, sensor rig, enclosure. It also can be a hardware design that hasn't been built yet. (We encourage you to build it, you can use the hardware grants in the shop.)</p>
+
 <h3 class="bg-heading">What goes in the repo</h3>
+
 <ul class="bg-checklist">
-<li class="bg-check bg-check-good"><span class="bg-mark">✓</span><span class="bg-check-body"><span class="bg-label">Schematic PDF</span><span class="bg-note">Lets reviewers skim your circuit without installing CAD software.</span></span></li>
-<li class="bg-check bg-check-good"><span class="bg-mark">✓</span><span class="bg-check-body"><span class="bg-label">Board files (KiCad / EasyEDA)</span><span class="bg-note">Source files prove you designed the board and let others remix it.</span></span></li>
-<li class="bg-check bg-check-good"><span class="bg-mark">✓</span><span class="bg-check-body"><span class="bg-label">Bill of Materials</span><span class="bg-note">Shows you understand what you built and roughly what it costs.</span></span></li>
-<li class="bg-check bg-check-good"><span class="bg-mark">✓</span><span class="bg-check-body"><span class="bg-label">Firmware source</span><span class="bg-note">Required so reviewers can read the code and reflash if needed.</span></span></li>
-<li class="bg-check bg-check-good"><span class="bg-mark">✓</span><span class="bg-check-body"><span class="bg-label">Photos of the assembled build and it working</span><span class="bg-note">Required. Reviewers want to see the hardware in front of you and the moment it actually does its thing (LED on, motor spinning, sensor read-out).</span></span></li>
-<li class="bg-check bg-check-good"><span class="bg-mark">✓</span><span class="bg-check-body"><span class="bg-label">Gerbers (if PCB ordered)</span><span class="bg-note">Manufacturing files that make the design fully reproducible.</span></span></li>
-<li class="bg-check bg-check-bad"><span class="bg-mark">✗</span><span class="bg-check-body"><span class="bg-label">Photos but no design source</span><span class="bg-note">Photos alone are not enough. Without schematics, board files, or firmware, reviewers cannot tell if you designed the build or bought it pre-assembled.</span></span></li>
+<li class="bg-check bg-check-good"><span class="bg-mark">✓</span><span class="bg-check-body"><span class="bg-label">Schematic PDF</span><span class="bg-note">Lets reviewers quickly understand your circuit without installing CAD software.</span></span></li>
+
+<li class="bg-check bg-check-good"><span class="bg-mark">✓</span><span class="bg-check-body"><span class="bg-label">Board files (KiCad / EasyEDA), or full schematic for non-PCB projects</span><span class="bg-note">Source files prove you designed the hardware and let others remix or manufacture it.</span></span></li>
+
+<li class="bg-check bg-check-good"><span class="bg-mark">✓</span><span class="bg-check-body"><span class="bg-label">Bill of Materials</span><span class="bg-note">Shows what parts are required and the approximate cost of reproducing the design.</span></span></li>
+
+<li class="bg-check bg-check-good"><span class="bg-mark">✓</span><span class="bg-check-body"><span class="bg-label">Firmware source (if applicable)</span><span class="bg-note">Include the code needed to program and test your hardware.</span></span></li>
+
+<li class="bg-check bg-check-good"><span class="bg-mark">✓</span><span class="bg-check-body"><span class="bg-label">Photos of the assembled build (if built)</span><span class="bg-note">Build photos are encouraged, but not required. Design-only hardware projects are fully acceptable.</span></span></li>
+
+<li class="bg-check bg-check-good"><span class="bg-mark">✓</span><span class="bg-check-body"><span class="bg-label">Gerbers (if PCB designed)</span><span class="bg-note">Manufacturing files make your PCB fully reproducible.</span></span></li>
+
+<li class="bg-check bg-check-bad"><span class="bg-mark">✗</span><span class="bg-check-body"><span class="bg-label">Only screenshots or renders</span><span class="bg-note">Your repository must include the original design source (schematics, CAD files, firmware, etc.), not just images.</span></span></li>
 </ul>
+
 <h3 class="bg-heading">Steps</h3>
+
 <ol class="bg-steps">
-<li><span class="bg-step-num">1</span><span>Push schematics, board files, firmware, and a Bill of Materials to GitHub.</span></li>
-<li><span class="bg-step-num">2</span><span>Export schematic and PCB layout as PDFs or PNGs so reviewers do not need KiCad or EasyEDA installed to skim the design.</span></li>
-<li><span class="bg-step-num">3</span><span>Write a Steps to Reproduce section in the README. A stranger should be able to follow it end-to-end: sourcing parts from the BoM, assembling, flashing the firmware, and verifying it works.</span></li>
-<li><span class="bg-step-num">4</span><span>Include a complete Bill of Materials with quantities, exact part numbers where they matter, and approximate costs.</span></li>
-<li><span class="bg-step-num">5</span><span>Commit progress as frequently as possible. Many small commits are required so reviewers can see the build evolve, not appear in a single dump.</span></li>
-<li><span class="bg-step-num">6</span><span>Record your build sessions with a timelapse tool. <a href="https://lapse.hackclub.com" target="_blank" rel="noopener">lapse.hackclub.com</a> is built for this and links straight into your submission.</span></li>
-<li><span class="bg-step-num">7</span><span>Keep a devlog with an entry roughly every hour of work.</span></li>
-<li><span class="bg-step-num">8</span><span>Take photos of the assembled build and of it actually working (LED on, motor spinning, sensor reading on a screen).</span></li>
-<li><span class="bg-step-num">9</span><span>Record a short demo video and link it as Demo URL.</span></li>
-<li><span class="bg-step-num">10</span><span>In the README also cover what it does, flashing instructions, and any safety notes (lipo, mains voltage, lasers).</span></li>
+<li><span class="bg-step-num">1</span><span>Push your schematics, board files, firmware (if any), and Bill of Materials to GitHub.</span></li>
+
+<li><span class="bg-step-num">2</span><span>Export your schematic and PCB layout as PDFs or PNGs so reviewers can inspect them without installing CAD software.</span></li>
+
+<li><span class="bg-step-num">3</span><span>Write a <strong>Steps to Reproduce</strong> section in your README explaining how someone can manufacture, assemble, flash, and test the project.</span></li>
+
+<li><span class="bg-step-num">4</span><span>Include a complete Bill of Materials with quantities, important part numbers, and approximate costs.</span></li>
+
+<li><span class="bg-step-num">5</span><span>Commit your work frequently. Many small commits help reviewers understand how your project evolved.</span></li>
+
+<li><span class="bg-step-num">6</span><span>Track your work using <a href="https://lapse.hackclub.com" target="_blank" rel="noopener">lapse.hackclub.com</a>. Lapse now supports both traditional recordings and <a href="https://lookout.hackclub.com" target="_blank" rel="noopener">Lookout</a> by simply choosing the Desktop mode in lapse, so if you prefer using Lookout, you can now have your recordings synced with your Hackatime project. Include your recording links in your <code>JOURNAL.md</code> file. Other recording methods (such as YouTube videos) are not accepted for time tracking.
+</span></li>
+
+<li><span class="bg-step-num">7</span><span>Keep a development journal with entries roughly every session of work.</span></li>
+
+<li><span class="bg-step-num">8</span><span>If you build the project, include photos showing the completed hardware and showing it working. Design-only projects do not require a physical build.</span></li>
+
+<li><span class="bg-step-num">9</span><span>Research time may be tracked, provided it remains a reasonable portion of the project and does not dominate your logged hours.</span></li>
+
+<li><span class="bg-step-num">10</span><span>You may design a zine page for your project. Up to <strong>30%</strong> of your project's tracked time may be counted towards the zine page or any other graphic design work.</span></li>
+
+<li><span class="bg-step-num">11</span><span>Document what your project does, flashing instructions (if applicable), and any important safety notes such as LiPo batteries, mains voltage, or lasers.</span></li>
 </ol>
-<div class="bg-callout bg-callout-tip"><ul class="bg-callout-list"><li>A complete Bill of Materials is non-negotiable. It is how reviewers verify you understand what you built and what it costs to reproduce.</li><li>Hours count for soldering, debugging firmware, and PCB layout. Log all of it with <a href="https://lapse.hackclub.com" target="_blank" rel="noopener">lapse.hackclub.com</a> or <a href="https://lookout.hackclub.com" target="_blank" rel="noopener">lookout.hackclub.com</a>.</li></ul></div>
+
+<div class="bg-callout bg-callout-tip">
+<ul class="bg-callout-list">
+<li>Design-only hardware projects are welcome. Building the hardware is optional, but all design source files must be included.</li>
+<li>A complete Bill of Materials is required so reviewers can understand the project and reproduce it.</li>
+<li>Use <strong>Lapse</strong> for all tracked work. Lapse now supports <strong>Lookout</strong>, allowing Lookout recordings to be synced with your Hackatime project. Include your recording links in <code>JOURNAL.md</code>.</li>
+<li>Research and documentation are valid project work when they directly support your build, but they should not make up the majority of your tracked time.</li>
+<li>Zine page design is encouraged, but only up to <strong>30%</strong> of your project's original tracked time may count toward it.</li>
+</ul>
+</div>
 </div>
 
 ## <svg class="bg-icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M27.7122 10.9133C27.2139 10.9739 26.6459 11 26 11C25.8982 11 25.7984 10.9994 25.7004 10.998C25.8986 12.2382 26 13.8588 26 16C26 18.141 25.8987 19.7616 25.7005 21.002C25.7984 21.0006 25.8982 21 26 21C26.6459 21 27.2139 21.0261 27.7122 21.0867C27.92 19.679 28 17.9994 28 16C28 14.0006 27.92 12.321 27.7122 10.9133ZM21.0867 27.7122C21.0261 27.2139 21 26.6459 21 26C21 25.8982 21.0006 25.7984 21.002 25.7005C19.7616 25.8987 18.141 26 16 26C13.859 26 12.2384 25.8987 10.998 25.7005C10.9994 25.7984 11 25.8982 11 26C11 26.6459 10.9739 27.2139 10.9133 27.7122C12.321 27.92 14.0006 28 16 28C17.9994 28 19.679 27.92 21.0867 27.7122ZM6 16C6 18.141 6.10134 19.7616 6.2995 21.002C6.20158 21.0006 6.10176 21 6 21C5.35406 21 4.78608 21.0261 4.28781 21.0867C4.07995 19.679 4 17.9994 4 16C4 14.0006 4.07995 12.321 4.28781 10.9133C4.78608 10.9739 5.35406 11 6 11C6.10176 11 6.20159 10.9994 6.29951 10.998C6.10134 12.2383 6 13.8589 6 16ZM21.0867 4.28781C19.679 4.07995 17.9994 4 16 4C14.0006 4 12.321 4.07995 10.9133 4.28781C10.9739 4.78608 11 5.35406 11 6C11 6.10189 10.9994 6.20184 10.998 6.29988C12.2384 6.10151 13.859 6 16 6C18.141 6 19.7616 6.10151 21.002 6.29988C21.0006 6.20184 21 6.10189 21 6C21 5.35406 21.0261 4.78609 21.0867 4.28781Z"/><path d="M30 6C30 8.007 29.725 8.861 29.293 9.293C28.861 9.725 28.007 10 26 10C23.993 10 23.139 9.725 22.707 9.293C22.275 8.861 22 8.007 22 6C22 3.993 22.275 3.139 22.707 2.707C23.139 2.275 23.993 2 26 2C28.007 2 28.861 2.275 29.293 2.707C29.725 3.139 30 3.993 30 6Z"/><path d="M30 26C30 28.007 29.725 28.861 29.293 29.293C28.861 29.725 28.007 30 26 30C23.993 30 23.139 29.725 22.707 29.293C22.275 28.861 22 28.007 22 26C22 23.993 22.275 23.139 22.707 22.707C23.139 22.275 23.993 22 26 22C28.007 22 28.861 22.275 29.293 22.707C29.725 23.139 30 23.993 30 26Z"/><path d="M10 26C10 28.007 9.725 28.861 9.293 29.293C8.861 29.725 8.007 30 6 30C3.993 30 3.139 29.725 2.707 29.293C2.275 28.861 2 28.007 2 26C2 23.993 2.275 23.139 2.707 22.707C3.139 22.275 3.993 22 6 22C8.007 22 8.861 22.275 9.293 22.707C9.725 23.139 10 23.993 10 26Z"/><path d="M10 6C10 8.007 9.725 8.861 9.293 9.293C8.861 9.725 8.007 10 6 10C3.993 10 3.139 9.725 2.707 9.293C2.275 8.861 2 8.007 2 6C2 3.993 2.275 3.139 2.707 2.707C3.139 2.275 3.993 2 6 2C8.007 2 8.861 2.275 9.293 2.707C9.725 3.139 10 3.993 10 6Z"/></svg> CAD Models
