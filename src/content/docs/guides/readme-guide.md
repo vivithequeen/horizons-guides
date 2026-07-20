@@ -7,7 +7,7 @@ hey! im violet and ive been working on horizons for the last few months. one of 
 
 ## firstly, what is a readme?
 a readme is a README.md file in your git repo, it's supposed to tell the person looking at your repo information about the program. 
-a readme is the first thing someone will see when your look at your project, you want to make a good impression! people have seen 1000 different projects, make yours stand out :)
+a readme is the first thing someone will see when your look at your project, you want to make a good impression! people have seen 1000s of different projects: make yours stand out :)
 
 readmes are written in markdown format, which is very common everywhere, this guide is written in markdown! here are some of the most common bits of formatting you'll use:
 
