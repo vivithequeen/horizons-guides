@@ -431,7 +431,7 @@ sidebar:
 <ol class="bg-steps">
 <li><span class="bg-step-num">1</span><span>Build a release APK. Signed with a debug key is fine for review.</span></li>
 <li><span class="bg-step-num">2</span><span>Upload the APK to a GitHub Release.</span></li>
-<li><span class="bg-step-num">3</span><span>Put the APK link in Demo URL and your repo in Code URL.</span></li>
+<li><span class="bg-step-num">3</span><span>Put the Release link in Demo URL and your repo in Code URL.</span></li>
 <li><span class="bg-step-num">4</span><span>In your README, list the minSdk and any permissions the app requests.</span></li>
 <li><span class="bg-step-num">5</span><span>Mention "install from unknown sources" must be allowed. This is normal for sideloading.</span></li>
 </ol>
