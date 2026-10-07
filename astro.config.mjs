@@ -34,6 +34,7 @@ export default defineConfig({
             { slug: "guides/website-guide" },
             { slug: "guides/godot-guide" },
             { slug: "guides/flask-guide" },
+            { slug: "guides/nest-hosting-guide" },
             { slug: "guides/more-resources" },
           ],
         },
