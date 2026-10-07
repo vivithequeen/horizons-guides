@@ -1,0 +1,33 @@
+---
+import Default from '@astrojs/starlight/components/SiteTitle.astro';
+---
+
+<div class="hc-site-title">
+	<a class="hc-flag" href="https://hackclub.com/" title="Hack Club">
+		<img src="https://assets.hackclub.com/flag-standalone.svg" alt="Hack Club" width="526" height="184" />
+	</a>
+	<Default><slot /></Default>
+</div>
+
+<style>
+	.hc-site-title {
+		display: flex;
+		align-items: center;
+		gap: var(--sl-nav-gap);
+		min-width: 0;
+	}
+	.hc-flag {
+		display: flex;
+		flex-shrink: 0;
+	}
+	/* Match the height of the Horizons icon in Starlight's SiteTitle */
+	.hc-flag img {
+		height: calc(var(--sl-nav-height) - 2 * var(--sl-nav-pad-y));
+		width: auto;
+	}
+	@media print {
+		.hc-flag {
+			display: none;
+		}
+	}
+</style>
