@@ -18,6 +18,10 @@ export default defineConfig({
           href: "https://github.com/vivithequeen/horizons-guides",
         },
       ],
+      components: {
+        SiteTitle: "./src/components/SiteTitle.astro",
+        PageTitle: "./src/components/PageTitle.astro",
+      },
       customCss: ["./src/styles/fonts.css", "./src/styles/custom.css"],
       sidebar: [
         {

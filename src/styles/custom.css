@@ -292,3 +292,28 @@ mobile-starlight-toc {
 .sl-markdown-content a:hover {
   text-decoration-color: var(--sl-color-accent);
 }
+
+/* ============================================
+   Print / PDF export — plain white page, content only
+   ============================================ */
+
+@media print {
+  :root body,
+  [data-theme='light'] body,
+  [data-theme='dark'] body {
+    background: #fff !important;
+  }
+
+  header.header,
+  .sidebar-pane,
+  .right-sidebar-container,
+  mobile-starlight-toc,
+  .pagination-links,
+  footer {
+    display: none !important;
+  }
+
+  .main-frame {
+    padding-top: 0 !important;
+  }
+}
